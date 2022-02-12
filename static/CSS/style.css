@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    color: #101010;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background-image: url('/static/Images/bgimage1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    border-bottom: 3px solid #f5be0c;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*background-color: #50fc84;*/
+    height: 10vh;
+}
+
+.potfolio-intro{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    color: #ffffff;
+}
+
+.logo{
+    width: 10%;
+    border-radius: 10%;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    list-style: none;
+}
+
+.navLinks li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.navLinks li a:hover{
+    font-size: 20px;
+}
+
+.burger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div{
+    background-color: #000000;
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+}
+
+footer{
+    display: flex;
+    background-color: #50fc84;
+    border-top:  1px solid #f5be0c;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.footer-logo{
+    width: 30px;
+    height: 5vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.my-image{
+    border-radius: 20px;
+    height: 40vh;
+    width: 330px;
+    margin: 5px 0 5px;
+    opacity: 0.9;
+}
+
+.my-image:hover{
+    opacity: 1;
+}
+.large-image{
+    width: auto;
+    border-radius: 20px;
+    height: 100%;
+}
+
+main{
+    overflow: hidden;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    /*border: 1px solid #101010;*/
+    box-shadow: 0 0 0 1px rgba(0, 010, 0, .7);
+}
+
+.experience strong{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.experience li{
+    list-style: none;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+
+.experience strong{
+    color: #000070;
+    font-size: 18px;
+}
+.soft-images{
+    text-align: center;
+    width: 10%;
+    height: 20%;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    background-color: #f5e1e1;
+    height: 5vh;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-links{
+    color: #000077;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.git-button{
+    width: 10vw;
+    background-color: #000000;
+    color:#f5be0c;
+    font-size: 18px;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+.git-links{
+    color: #f5be0c;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.git-links:hover{
+    font-size: 20px;
+}
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.touchgallery{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%; /* default gallery width */
+    height: 270px; /* default gallery height */
+    }
+    
+    .touchgallery ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        left: 0;
+        position: absolute;
+        -moz-transition: all 100ms ease-in-out; /* image transition. Change 100ms to desired transition duration */
+        -webkit-transition: all 100ms ease-in-out;
+        transition: all 100ms ease-in-out;
+    }
+    .touchgallery ul .sites{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .touchgallery ul .sites:nth-child(1){
+        padding-left: 10px;
+    }
+    .touchgallery ul .sites li{
+        float: center;
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+    }
+    
+    .touchgallery ul .sites li img{ /* CSS for images within gallery */
+    max-width: 100%; /* make each image responsive, so its native width can occupy up to 100% of gallery's width, but not beyond */
+    height: auto;
+    border-radius: 5px;
+    }
+
+.touchgallery ul .sites .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin: 1px;
+}
+.touchgallery ul .sites .links button{
+    margin: 10px;
+    margin-top: 0;
+    height: 8vh;;
+}
+
+.projects h4{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.end{
+    display: flex;
+    background-color: #50fc84;
+    justify-content: space-around;
+    border-top: 3px solid #f5be0c;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.contact{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact li{
+    list-style: none;
+}
+
+.contact li a{
+    text-decoration: none;
+    color: #000000;
+    color: #000077;
+}
+
+.contact li a:hover{
+    font-size: 18px;
+}
+
+.black{
+    color: #000000;
+    font-size: 18px;
+}
+
+.personal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.personal li{
+    list-style: none;
+}
+
+.personal h4{
+    font-size: 20px;
+}
+
+.personal li a{
+    color: #000077;
+    text-decoration: none;
+}
+
+.personal li a:hover{
+    font-size: 18px;
+}
+
+#preloader {
+    justify-content: center;
+    text-align: center;
+    border: 16px solid #f5be0c;
+    border-top: 16px solid blue;
+    border-bottom: 16px solid #007700;
+    border-right: 16px solid #000000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loader{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #101010;
+}
+
+
+#text {
+    height: 100px;
+    line-height: 890px;
+    text-align: center;
+    color: green;
+    font-size: 30px;
+
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.loader-display{
+    display: flex;
+}
+
+.buttons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons li {
+    display: inline-block;
+    margin-left: 20px;
+    height: 5px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #0475f5;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+.buttons li:hover{
+    background-color: #000000;
+}
+
+
+/****************dark mode************************/
+
+.dark{
+    color: #ffffff;
+    background-color: #423a3a;
+}
+
+.dark .about{
+    color: #ffffff;
+}
+
+.dark .navLinks li a{
+    color: #f1e2e2;
+}
+
+.dark .projects h4{
+    color: #ffffff;
+}
+
+.dark .hire{
+    color: #f8e917;
+}
+
+
+
+
+/*****************Media Querries*********************/
+            /**********small pc screens********/
+@media only screen and (max-width: 1000px){
+    .about .my-image{
+        height: 330px;
+        width: 400px;
+    }
+    .about{
+        margin-top: 20px;
+    }
+
+    .about div{
+        align-items: center;
+        justify-content: center;
+    }
+    .about div p{
+        margin-top: 180px;
+        text-align: center;
+    }
+    .sites img{
+        width: 40vw;
+    }
+
+    button{
+        width: 10vw;
+        background-color: #f5e1e1;
+        font-size: 18px;
+        height: 5%;
+        border-radius: 10px;
+    }
+    .git-button{
+        width: 10vw;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .navLinks{
+        display: flex;
+        position: absolute;
+        top: 9vh;
+        justify-content: space-around;
+        align-items: center;
+        height: 5vh;
+        width: 100vw;
+        font-size: 13px;
+    }
+
+    .about .my-image{
+        height: 200px;
+        width: 250px;
+
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+
+    .about div p{
+        margin-top: 130px;
+    }
+}
+
+
+/*********tabs*********************/
+
+@media only screen and (max-width: 750px){
+    header{
+        height: auto;
+    }
+    .potfolio-intro{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        width: 5vw;
+        height: 5vh;
+    }
+    .navLinks{
+        display: flex;
+        position: absolute;
+        top: 9vh;
+        justify-content: space-around;
+        align-items: center;
+        height: 5vh;
+        width: 100vw;
+        font-size: 13px;
+    
+    }
+    .about{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+
+    .about div{
+        align-items: center;
+        justify-content: center;
+    }
+    .about div p{
+        margin-top: 100px;
+    }
+    .sites img{
+        width: 40vw;
+    }
+
+    button{
+        width: 20vw;
+        background-color: #f5e1e1;
+        font-size: 18px;
+        height: 5vh;
+        border-radius: 10px;
+    }
+    .git-button{
+        width: 20vw;
+    }
+
+    .black{
+        font-size: 18px;
+    }
+
+}
+
+
+/***********mobile***********************/
+@media only screen and (max-width: 550px){
+
+    header{
+        height: auto;
+    }
+    .potfolio-intro{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .potfolio-intro h4{
+        font-size: 10px;
+    }
+
+    .logo{
+        width: 6vw;
+        height: 5vh;
+    }
+    .navLinks{
+        display: flex;
+        position: absolute;
+        top: 9vh;
+        left: 0;
+        justify-content: space-around;
+        align-items: center;
+        height: 5vh;
+        width: 100vw;
+    }
+
+    .navLinks li a{
+        font-size: 15px;
+    }
+
+
+    .my-image{
+        width: 500px;
+        height: 20%;
+
+    }
+    .about{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .about div{
+        align-items: center;
+        justify-content: center;
+    }
+    .about div p{
+        margin-top: 80px;
+        font-size: 18px;
+    }
+
+    .experience{
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .experience .hire:hover{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    button{
+        margin-top: 10px;
+        width: 30vw;
+        background-color: #f5e1e1;
+        font-size: 18px;
+        height: 5vh;
+        border-radius: 10px;
+    }
+    .git-button{
+        width: 30vw;
+    }
+    .touchgallery{
+        margin-left: 0;
+    }
+    .touchgallery ul{
+        margin: 0;
+    }
+
+    .touchgallery ul .sites{
+        margin: 0;
+    }
+    .touchgallery ul .sites li img{
+        width: 80vw;
+    }
+
+    .end{
+        flex-direction: column;
+    }
+
+    .contact{
+        font-size: 13px;
+        margin-bottom: 20px;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    .contact h4{
+        text-align: center;
+    }
+    footer p{
+        font-size: 10px;
+    }
+
+    .black{
+        font-size: 15px;
+    }
+
+}
+
+
