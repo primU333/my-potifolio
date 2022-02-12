@@ -160,7 +160,7 @@ const moveIMages = ()=>{
     })
 
     btn2.addEventListener('click', ()=>{
-        sites.style.left = '-200px';
+        sites.style.left = '-300px';
         btn2.style.background = 'black';
         btn1.style.background = 'blue';
         btn3.style.background = 'blue';
@@ -168,7 +168,7 @@ const moveIMages = ()=>{
     })
 
     btn3.addEventListener('click', ()=>{
-        sites.style.left = '-400px';
+        sites.style.left = '-600px';
         btn3.style.background = 'black';
         btn1.style.background = 'blue';
         btn2.style.background = 'blue';
@@ -176,7 +176,7 @@ const moveIMages = ()=>{
     })
 
     btn4.addEventListener('click', ()=>{
-        sites.style.left = '-800px';
+        sites.style.left = '-900px';
         btn4.style.background = 'black';
         btn1.style.background = 'blue';
         btn3.style.background = 'blue';
